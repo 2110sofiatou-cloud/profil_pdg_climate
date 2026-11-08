@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   THÉODORE GBOVOU - CLIMATE INVEST — Design System v6
+   THÉODORE GBOYOU - CLIMATE INVEST — Design System v6
    Direction artistique : Édition institutionnelle & diplomatique
    Typographie : Merriweather (titres & accents éditoriaux) & Lato (texte/UI)
    Palette : Vert forêt profond - Or antique - Lin chaud
@@ -2386,6 +2386,563 @@ strong {
   font-weight: 600;
   color: var(--vert);
   overflow-wrap: anywhere;
+}
+
+/* ─── DISTINCTIONS (HERO) ────────────────────────────────── */
+.hero-distinctions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-distinction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem 0.45rem 0.6rem;
+  border-radius: 999px;
+  background: var(--gris-subtle);
+  border: 1px solid var(--gris);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--vert-dk);
+  line-height: 1.3;
+}
+
+.hero-distinction svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--vert-brand);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ─── PROFIL : pied du panneau à deux infos ──────────────── */
+.profil-dark-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+/* ─── CLIMATE INVEST : partenaire technique de terrain ───── */
+.ci-partner-note {
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--vert-brand);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--gris-subtle);
+  max-width: 620px;
+}
+
+.ci-partner-title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--vert-dk);
+  margin-bottom: 0.35rem;
+}
+
+.ci-partner-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--graphite);
+}
+
+.ci-partner-text strong {
+  color: var(--vert-dk);
+}
+
+/* ─── PROJETS : distinction sur la carte Fertisol Africa ── */
+.project-award {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: #FFFFFF;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.35);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--vert-dk);
+}
+
+.project-award svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: var(--vert-brand);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ─── 6. MoU — BILLETS FAÇON BADGE DE CONFÉRENCE ─────────── */
+.section-mou {
+  background: var(--vert-dk);
+  color: #FFFFFF;
+}
+
+.mou-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.mou-intro {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.section-mou .section-kicker {
+  color: var(--or-light);
+}
+
+.section-mou .section-heading {
+  color: #FFFFFF;
+}
+
+.mou-lead {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 2rem;
+}
+
+/* Carte « Une question ? » avec la photo de Théodore */
+.mou-ask {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  max-width: 380px;
+  padding: 1rem 1.15rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mou-ask-avatar {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px var(--or-light);
+}
+
+.mou-ask-q {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.15rem;
+}
+
+.mou-ask-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--or-light);
+}
+
+.mou-ask-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Billet : partie principale + souche détachable */
+.mou-tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mou-ticket {
+  --notch: var(--vert-dk);
+  --perforation: rgba(34, 66, 24, 0.22);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  border-radius: 18px;
+  background: #FFFFFF;
+  color: var(--graphite);
+  box-shadow: 0 26px 50px -26px rgba(0, 0, 0, 0.6);
+}
+
+.mou-ticket--org {
+  --perforation: rgba(140, 117, 59, 0.35);
+  background: #FFFFFF;
+}
+
+.mou-ticket-main {
+  padding: 1.9rem 2rem 2rem;
+}
+
+.mou-ticket-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.mou-option {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--graphite-muted);
+}
+
+.mou-tag {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--vert-brand);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.mou-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--vert-dk);
+}
+
+.mou-audience {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--graphite-muted);
+}
+
+.mou-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem 1.4rem;
+  margin: 1.4rem 0 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid rgba(34, 66, 24, 0.1);
+  list-style: none;
+}
+
+.mou-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.mou-features svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--gris-subtle);
+  color: var(--vert-brand);
+}
+
+.mou-ticket--org .mou-features svg {
+  background: rgba(180, 154, 89, 0.2);
+  color: var(--or-dk);
+}
+
+.mou-ticket-stub {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  padding: 1.75rem 1.4rem;
+  border-left: 2px dashed var(--perforation);
+  text-align: center;
+}
+
+/* Encoches de découpe en haut et en bas de la perforation */
+.mou-ticket-stub::before,
+.mou-ticket-stub::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--notch);
+}
+
+.mou-ticket-stub::before { top: -11px; }
+.mou-ticket-stub::after { bottom: -11px; }
+
+.mou-price {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.15rem;
+  line-height: 1;
+}
+
+.mou-amount {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--vert-dk);
+}
+
+.mou-cur {
+  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vert-brand);
+}
+
+.mou-ticket--org .mou-cur {
+  color: var(--or-dk);
+}
+
+.mou-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: var(--vert-brand);
+  color: #FFFFFF;
+  font-size: 0.92rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background var(--dur-base) ease, transform var(--dur-fast) ease;
+}
+
+.mou-btn:hover {
+  background: var(--vert-dk);
+  transform: translateY(-1px);
+}
+
+.mou-ticket--org .mou-btn {
+  background: var(--vert-dk);
+}
+
+.mou-ticket--org .mou-btn:hover {
+  background: var(--vert-brand);
+}
+
+.mou-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ─── 7. SESSION B2B — PARCOURS EN 3 ÉTAPES ──────────────── */
+.section-b2b {
+  background: #FFFFFF;
+}
+
+.mou-head,
+.b2b-head {
+  max-width: 680px;
+  margin-bottom: 3rem;
+}
+
+.b2b-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.b2b-step {
+  position: relative;
+}
+
+/* Ligne pointillée qui relie les étapes */
+.b2b-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 72px;
+  right: -1.5rem;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--vert-brand) 0 8px, transparent 8px 14px);
+  opacity: 0.55;
+}
+
+.b2b-step-num {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: var(--vert-dk);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: 0 0 0 6px #FFFFFF, 0 0 0 7px rgba(34, 66, 24, 0.15);
+}
+
+.b2b-step:last-child .b2b-step-num {
+  background: var(--or);
+  color: var(--vert-dk);
+}
+
+.b2b-step-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--vert-dk);
+  margin-bottom: 0.45rem;
+}
+
+.b2b-step-text {
+  max-width: 320px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--graphite-muted);
+}
+
+.b2b-secure {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 780px;
+  margin-top: 3rem;
+  padding: 1.1rem 1.35rem;
+  border-radius: 14px;
+  background: var(--gris-subtle);
+  border: 1px solid var(--gris);
+}
+
+.b2b-secure-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--vert-dk);
+}
+
+.b2b-secure-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.b2b-secure p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--graphite);
+}
+
+.b2b-secure strong {
+  color: var(--vert-dk);
+}
+
+/* ─── MoU & B2B — responsive ─────────────────────────────── */
+@media (max-width: 1024px) {
+  .mou-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mou-intro {
+    position: static;
+  }
+}
+
+@media (max-width: 860px) {
+  .b2b-steps {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  /* Étapes en colonne : numéro à gauche, ligne verticale */
+  .b2b-step {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    column-gap: 1.1rem;
+  }
+
+  .b2b-step-num {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .b2b-step:not(:last-child)::after {
+    top: 64px;
+    bottom: calc(-1.75rem + 8px);
+    left: 27px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: repeating-linear-gradient(180deg, var(--vert-brand) 0 8px, transparent 8px 14px);
+  }
+}
+
+@media (max-width: 640px) {
+  .mou-ticket {
+    grid-template-columns: 1fr;
+  }
+
+  .mou-ticket-main {
+    padding: 1.6rem 1.35rem 1.5rem;
+  }
+
+  .mou-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Souche sous le billet : perforation horizontale, encoches sur les côtés */
+  .mou-ticket-stub {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25rem 1.35rem 1.4rem;
+    border-left: none;
+    border-top: 2px dashed var(--perforation);
+  }
+
+  .mou-ticket-stub::before,
+  .mou-ticket-stub::after {
+    top: -12px;
+    bottom: auto;
+  }
+
+  .mou-ticket-stub::before { left: -11px; }
+  .mou-ticket-stub::after { left: auto; right: -11px; }
+
+  .mou-amount {
+    font-size: 2.6rem;
+  }
+
+  .mou-btn {
+    width: auto;
+    padding: 0.75rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-distinction {
+    font-size: 0.82rem;
+  }
 }
 
 /* ─── FOOTER HAUT DE GAMME & INSTITUTIONNEL ──────────────── */

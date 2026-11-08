@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────
-   Théodore Gbovou - Climate Invest — main.js v5
+   Théodore Gboyou - Climate Invest — main.js v5
    Navigation + lien actif + révélation au scroll
    (aucun loader : le contenu n'est jamais bloqué)
 ───────────────────────────────────────────────── */

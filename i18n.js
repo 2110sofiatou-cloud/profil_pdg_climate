@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────
-   Théodore Gbovou - Climate Invest — i18n.js
+   Théodore Gboyou - Climate Invest — i18n.js
    Bascule FR / EN sans rechargement.
    Le français reste dans le HTML (langue source) ;
    seules les traductions anglaises vivent ici.
@@ -31,8 +31,8 @@
       description: (document.querySelector('meta[name="description"]') || {}).content || ''
     },
     en: {
-      title: 'Théodore Gbovou - President of Climate Invest, Benin Youth Delegate to COP31',
-      description: 'Théodore Gbovou, President of Climate Invest. Eight years of experience in West Africa, expertise in Article 6 of the Paris Agreement and MRV technologies. Benin Youth Delegate to COP31.'
+      title: 'Théodore Gboyou - President of Climate Invest, Benin Youth Delegate to COP31',
+      description: 'Théodore Gboyou, President of Climate Invest. Eight years of experience in West Africa, expertise in Article 6 of the Paris Agreement and MRV technologies. Benin Youth Delegate to COP31.'
     }
   };
 
@@ -42,6 +42,7 @@
     'nav.aria': 'Main navigation',
     'nav.profil': 'My profile',
     'nav.projets': 'My projects',
+    'nav.mou': 'Join',
     'nav.contact': 'Contact me',
 
     'hero.flag': 'Benin Delegation',
@@ -49,9 +50,11 @@
     'hero.role': 'President of <strong class="hero-role-co">Climate Invest</strong>',
     'hero.pitch': 'For eight years, I have been working on the ground across West Africa to design, audit and structure high-impact climate projects. Through my company Climate Invest and my mandate as Benin\'s youth delegate to COP31, I champion a clear vision: putting <strong>Article 6 of the Paris Agreement</strong> and <strong>MRV</strong> technologies at the service of sovereign, rigorous carbon finance that creates value for our territories.',
     'hero.cta': 'Get in touch',
-    'hero.vision': 'Discover my vision',
+    'hero.join': 'Join Climate Invest',
+    'hero.award': 'African Union Climate Innovator (AU)',
+    'hero.specialty': 'Article 6 &amp; AFOLU specialist',
     'hero.vcard': 'Download my business card (vCard)',
-    'hero.portraitAlt': 'Official portrait of Théodore Gbovou, President of Climate Invest',
+    'hero.portraitAlt': 'Official portrait of Théodore Gboyou, President of Climate Invest',
     'hero.metaTitle': 'National youth delegate',
     'hero.metaSub': 'COP31 - Republic of Benin',
 
@@ -61,6 +64,8 @@
     'profil.lead': 'I devote my career to the practical mechanisms that make it possible to finance, audit and add value to climate action in West Africa. As President of Climate Invest, I combine uncompromising technical standards with a command of multilateral negotiations to help our businesses, institutions and project developers achieve tangible, measurable results.',
     'profil.metaLabel': 'Mandate &amp; Presidency',
     'profil.metaVal': 'Climate Invest - COP31 Delegate',
+    'profil.eduLabel': 'Education',
+    'profil.eduVal': 'Rural engineering, Statistics &amp; Public economics',
     'profil.card1.title': 'of experience and direct field work',
     'profil.card1.text': 'Eight years of audits, agronomic assessments and hands-on field support across West Africa, working with public and private stakeholders.',
     'profil.card2.title': 'Article 6 of the Paris Agreement',
@@ -91,6 +96,8 @@
     'ci.kicker': 'My company &amp; my tool for action',
     'ci.title': 'Climate Invest: the engineering firm I built to act',
     'ci.lead': 'I founded and lead Climate Invest to give West Africa a leading engineering, audit and sustainable finance firm. With my teams in Benin, we support businesses, project developers and institutions in measuring, certifying and financially valuing their climate assets.',
+    'ci.partnerTitle': 'Private on-the-ground technical partner',
+    'ci.partnerText': 'Climate Invest acts as technical implementation operator and MRV integrator to deliver the goals of <strong>Benin’s NDC 3.0</strong>, in synergy with the institutional framework. For all our projects, ITMO transfers remain under the strict sovereignty of the State.',
     'ci.timelineAria': 'Climate Invest intervention cycle',
     'ci.step1.title': 'Environmental assets',
     'ci.step1.text': 'With my teams, I identify, model and secure your emission reductions so they can be valued under the most demanding standards of the international carbon market.',
@@ -112,9 +119,10 @@
     'projects.p1.label': 'AWD pilot plots',
     'projects.p1.text': 'I support farmers across 100 hectares of lowland rice fields using AWD irrigation (<em>Alternate Wetting and Drying</em>): we cut methane emissions by around 45% while digitalising MRV monitoring to certify their efforts.',
     'projects.p2.alt': 'Soil restoration and carbon sequestration with biochar in Benin',
-    'projects.p2.title': 'Soils &amp; Biochar',
+    'projects.p2.title': 'Fertisol Africa',
+    'projects.p2.award': 'African Union Prize',
     'projects.p2.badge': 'Soil carbon sequestration',
-    'projects.p2.label': 'Diagnostics &amp; Biochar',
+    'projects.p2.label': 'Soils, Biochar &amp; SOC MRV',
     'projects.p2.text': 'I lead agronomic assessments and biochar amendment across 1,000 hectares to durably restore soil fertility and quantify organic carbon sequestration (SOC MRV) under strict protocols.',
     'projects.p3.alt': 'Decarbonisation and energy transition of agro-industrial SMEs in Benin',
     'projects.p3.title': 'SME decarbonisation',
@@ -126,9 +134,43 @@
     'projects.next': 'Next project',
     'projects.dotsAria': 'Project indicators',
     'projects.dot1': 'Project 1: Rice farming & MRV',
-    'projects.dot2': 'Project 2: Soils & Biochar',
+    'projects.dot2': 'Project 2: Fertisol Africa',
     'projects.dot3': 'Project 3: SME decarbonisation',
     'projects.note': '* The figures shown describe the operational scope of our interventions. The schedule and detailed progress are available on request.',
+
+    'mou.kicker': 'Join the journey',
+    'mou.title': 'Expression of interest (MoU)',
+    'mou.lead': 'The MoU is the single entry point to the post-COP31 programme. Choose the option that matches your status to activate your signature.',
+    'mou.recommended': 'Recommended',
+    'mou.calendly': 'Access to the Calendly link for the post-COP31 B2B session',
+    'mou.ind.option': 'Option 1',
+    'mou.ind.title': 'Individual / Researcher',
+    'mou.ind.audience': 'Consultants, independent experts, researchers',
+    'mou.ind.f1': 'Activation of the individual letter of intent',
+    'mou.ind.f2': 'Summary impact report on the 3 projects',
+    'mou.ind.f3': 'Climate commitment certificate',
+    'mou.ind.cta': 'Activate the MoU',
+    'mou.org.option': 'Option 2',
+    'mou.org.title': 'SME / NGO / Institution',
+    'mou.org.audience': 'Local SMEs, NGOs, firms, cooperatives',
+    'mou.org.f1': 'Activation of the organisational letter of intent',
+    'mou.org.f2': 'Official mention of your logo and name in the annual report',
+    'mou.org.f3': 'CSR/ESG certificate for your organisation',
+    'mou.org.cta': 'Activate the MoU',
+    'mou.question': 'Any questions before committing?',
+    'mou.questionLink': 'Write to us on WhatsApp',
+
+    'b2b.kicker': 'After MoU validation',
+    'b2b.title': 'Post-COP31 B2B session',
+    'b2b.lead': 'A strategic working session, scheduled at your convenience, to turn your commitment into concrete next steps.',
+    'b2b.step1.title': 'MoU validation',
+    'b2b.step1.text': 'Your expression of interest is recorded and your signature activated.',
+    'b2b.step2.title': 'Calendly link received',
+    'b2b.step2.text': 'It is sent to you automatically so you can book the slot that suits you.',
+    'b2b.step3.title': 'B2B working session',
+    'b2b.step3.text': 'One to two weeks after COP31, to explore scale-up opportunities or consolidate your initial commitment.',
+    'b2b.security.title': 'Confidentiality:',
+    'b2b.security.text': 'raw data and GIS files are only shared under a firm contract and a non-disclosure agreement (NDA).',
 
     'counter.years': ' years',
     'counter.smes': ' SMEs',
@@ -139,7 +181,7 @@
     'footer.whatsapp': 'Chat on WhatsApp',
     'footer.whatsappHref': 'https://wa.me/2290194772347?text=Hello%20Th%C3%A9odore%2C%20I%20would%20like%20to%20discuss...',
     'footer.email': 'Send a direct email',
-    'footer.avatarAlt': 'Théodore Gbovou, President of Climate Invest',
+    'footer.avatarAlt': 'Théodore Gboyou, President of Climate Invest',
     'footer.badgeTitle': 'Climate Invest firm',
     'footer.logoAlt': 'Climate Invest logo',
     'footer.role': 'President of <strong>Climate Invest</strong>',
@@ -151,16 +193,18 @@
     'footer.nav.cop': 'COP31 mandate - Türkiye',
     'footer.nav.ci': 'Climate Invest firm',
     'footer.nav.projets': 'My field projects',
+    'footer.nav.mou': 'Expression of interest (MoU)',
+    'footer.nav.b2b': 'Post-COP31 B2B session',
     'footer.nav.contact': 'Get in touch',
     'footer.progTitle': 'Programmes &amp; Expertise',
     'footer.prog1': 'Sustainable rice farming &amp; AWD (100 ha)',
-    'footer.prog2': 'Biochar &amp; soil regeneration (1,000 ha)',
+    'footer.prog2': 'Fertisol Africa - Soils &amp; Biochar (1,000 ha)',
     'footer.prog3': 'Decarbonisation &amp; ISO 14064 (30 SMEs)',
     'footer.prog4': 'Article 6 &amp; ITMO negotiations',
     'footer.prog5': 'MRV protocols &amp; technologies',
     'footer.contactTitle': 'Contact &amp; Exchanges',
     'footer.location': 'Cotonou, Republic of Benin',
-    'footer.copy': '&copy; 2026 Théodore Gbovou - All rights reserved.',
+    'footer.copy': '&copy; 2026 Théodore Gboyou - All rights reserved.',
     'footer.subtext': 'Beninese youth delegation to COP31 - Republic of Benin',
     'footer.topAria': 'Back to top',
     'footer.top': 'Back to top'
