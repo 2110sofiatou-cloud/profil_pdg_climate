@@ -1,97 +1,131 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Théodore Gbovou - Président de Climate Invest, Jeune délégué du Bénin à la COP31</title>
   <meta name="description"
-    content="Théodore Gboyou, Président de Climate Invest. Cabinet d'ingénierie, audit et finance durable au Bénin. Article 6, MRV, programme post-COP31." />
-  <title>Théodore Gboyou · Climate Invest · COP31</title>
+    content="Théodore Gbovou, Président de Climate Invest. Huit ans d'expérience en Afrique de l'Ouest, expertise Article 6 de l'Accord de Paris et technologies MRV. Jeune délégué du Bénin à la COP31." />
+  <meta name="author" content="Théodore Gbovou" />
+
+  <!-- Partage (WhatsApp, LinkedIn…) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Théodore Gbovou - Président de Climate Invest" />
+  <meta property="og:description"
+    content="Huit ans d'expérience en Afrique de l'Ouest, Article 6 & MRV, Jeune délégué du Bénin à la COP31." />
+  <meta property="og:image" content="assets/img/theodore-gbovou.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/img/logo-climate-invest.png" />
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Théodore Gbovou",
+    "jobTitle": "Président",
+    "worksFor": { "@type": "Organization", "name": "Climate Invest", "url": "https://www.climateinvest.bj" },
+    "knowsAbout": ["Article 6 de l'Accord de Paris", "MRV (Mesure, Notification, Vérification)", "Finance climatique"]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- LOADER ──────────────────────────────────── -->
-  <div class="page-loader" id="pageLoader" aria-label="Chargement de la page" role="status">
-    <div class="loader-content">
-      <div class="loader-logo-wrap">
-        <div class="loader-circle"></div>
-        <div class="loader-mark">CI</div>
-      </div>
-      <p class="loader-brand">Climate Invest</p>
-      <p class="loader-sub">Cabinet d'ingénierie, audit et finance durable</p>
-      <div class="loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-        <span class="loader-fill"></span>
-      </div>
-    </div>
-  </div>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
 
   <!-- NAVIGATION ─────────────────────────────── -->
   <header class="nav-header" id="top">
-    <nav class="nav-inner container">
+    <nav class="nav-inner container" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
       <a href="#top" class="nav-logo" id="nav-home">
-        <span class="nav-logo-mark">CI</span>
-        <span class="nav-logo-text">Climate Invest</span>
+        <img class="nav-avatar" src="assets/img/theodore-avatar.jpg" width="160" height="160" alt="" />
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">Théodore Gbovou</span>
+          <span class="nav-logo-role">Climate Invest</span>
+        </span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#mission" class="nav-link" id="nav-mission">Mission</a></li>
-        <li><a href="#programme" class="nav-link" id="nav-prog">Programme</a></li>
-        <li><a href="#mou" class="nav-link" id="nav-mou">MoU</a></li>
-        <li><a href="#b2b" class="nav-link" id="nav-b2b">Session B2B</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
-        <li>
-          <a href="https://wa.me/2290194772347?text=Bonjour%20CLIMATE%20INVEST%2C%20j%27ai%20rencontr%C3%A9%20Th%C3%A9odore%20et%20j%27ai%20scann%C3%A9%20son%20badge%20%C3%A0%20la%20COP-31..."
-            class="nav-cta" target="_blank" rel="noopener" id="nav-wa">WhatsApp</a>
-        </li>
+        <li><a href="#profil" class="nav-link" data-i18n="nav.profil">Mon profil</a></li>
+        <li><a href="#cop31" class="nav-link">COP31</a></li>
+        <li><a href="#climate-invest" class="nav-link">Climate Invest</a></li>
+        <li><a href="#projets" class="nav-link" data-i18n="nav.projets">Mes projets</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Me contacter</a></li>
       </ul>
+      <div class="lang-switch" role="group" aria-label="Choisir la langue">
+        <button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="true" title="Français">
+          <span>FR</span>
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false" title="English">
+          <span>EN</span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
 
-    <!-- HERO ────────────────────────────────── -->
-    <section class="hero" id="hero">
+    <!-- 1. HERO — Le dirigeant ────────────────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-grid">
 
           <div class="hero-text">
-            <p class="hero-context anim-hero-1">COP31 · Bâton Rouge, 2026</p>
-            <h1 class="hero-name anim-hero-2">Théodore<br>Gboyou</h1>
-            <p class="hero-role anim-hero-3">Président, Climate Invest</p>
-            <p class="hero-descriptor anim-hero-4">Cabinet d'ingénierie, audit et finance durable · Bénin</p>
-            <div class="hero-divider anim-hero-5"></div>
-            <p class="hero-pitch anim-hero-6">Spécialiste du génie rural, des statistiques et de l'économie publique.
-              Huit ans d'expérience terrain en Afrique de l'Ouest, avec une expertise ciblée sur l'Article 6 de l'Accord
-              de Paris et les technologies MRV.</p>
-            <div class="hero-actions anim-hero-7">
-              <a href="#mou" class="btn btn-primary" id="hero-cta-mou">Rejoindre Climate Invest</a>
-              <a href="https://wa.me/2290194772347?text=Bonjour%20CLIMATE%20INVEST%2C%20j%27ai%20rencontr%C3%A9%20Th%C3%A9odore%20et%20j%27ai%20scann%C3%A9%20son%20badge%20%C3%A0%20la%20COP-31..."
-                class="btn btn-outline" target="_blank" rel="noopener" id="hero-cta-wa">WhatsApp</a>
-              <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AGboyou%3BTh%C3%A9odore%3B%3B%3B%0D%0AFN%3ATh%C3%A9odore%20Gboyou%0D%0AORG%3AClimate%20Invest%0D%0ATITLE%3APr%C3%A9sident%0D%0ATEL%3BTYPE%3DCELL%3A%2B2290194772347%0D%0AEMAIL%3Acontact%40climateinvest.bj%0D%0AURL%3Ahttps%3A//www.climateinvest.bj%0D%0AEND%3AVCARD%0D%0A"
-                class="btn btn-ghost" download="Theodore_Gboyou.vcf" id="hero-cta-vcard">Enregistrer la carte</a>
+            <div class="hero-kicker anim-hero-1">
+              <span class="kicker-flag" data-i18n="hero.flag">Délégation du Bénin</span>
+              <span class="kicker-sep">/</span>
+              <span class="kicker-event" data-i18n="hero.event">COP31 - Turquie 2026</span>
             </div>
+
+            <h1 class="hero-name anim-hero-2" id="hero-title">
+              Théodore Gbovou
+              <span class="hero-role" data-i18n="hero.role">Président de <strong class="hero-role-co">Climate Invest</strong></span>
+            </h1>
+
+            <p class="hero-pitch anim-hero-3" data-i18n="hero.pitch">
+              Depuis huit ans, j'arpente le terrain en Afrique de l'Ouest pour concevoir, auditer et structurer des projets climatiques à fort impact. À travers mon entreprise Climate Invest et mon mandat de jeune délégué du Bénin à la COP31, je défends une vision claire : mettre l'<strong>Article 6 de l'Accord de Paris</strong> et les technologies <strong>MRV</strong> au service d'une finance carbone souveraine, rigoureuse et créatrice de valeur pour nos territoires.
+            </p>
+
+            <div class="hero-actions anim-hero-4">
+              <a href="#contact" class="btn btn-primary" id="hero-cta-contact">
+                <span data-i18n="hero.cta">Prendre contact avec moi</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true" class="btn-arrow">
+                  <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#climate-invest" class="btn btn-outline" id="hero-cta-ci" data-i18n="hero.vision">Découvrir ma vision</a>
+            </div>
+
+            <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AGbovou%3BTh%C3%A9odore%3B%3B%3B%0D%0AFN%3ATh%C3%A9odore%20Gbovou%0D%0AORG%3AClimate%20Invest%0D%0ATITLE%3APr%C3%A9sident%0D%0ATEL%3BTYPE%3DCELL%3A%2B2290194772347%0D%0AEMAIL%3Acontact%40climateinvest.bj%0D%0AURL%3Ahttps%3A//www.climateinvest.bj%0D%0AEND%3AVCARD%0D%0A"
+              class="hero-vcard anim-hero-4" download="Theodore_Gbovou.vcf" id="hero-cta-vcard" data-i18n="hero.vcard">
+              Télécharger ma carte de visite (vCard)
+            </a>
           </div>
 
           <div class="hero-visual anim-hero-portrait">
-            <div class="portrait-wrap">
-              <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Emplacement réservé à la photo de Théodore Gboyou" role="img">
-                <rect width="320" height="400" fill="#183D32" />
-                <circle cx="160" cy="145" r="66" fill="#1e4a3c" />
-                <ellipse cx="160" cy="345" rx="105" ry="82" fill="#1e4a3c" />
-                <text x="160" y="168" text-anchor="middle" fill="#B49A59" font-family="Georgia, serif" font-size="54"
-                  font-weight="bold" letter-spacing="3">TG</text>
-              </svg>
-              <p class="portrait-caption">Photo · disponible sur demande</p>
+            <div class="portrait-card">
+              <div class="portrait-frame">
+                <img src="assets/img/theodore-gbovou.jpg" width="1080" height="1150" fetchpriority="high"
+                  alt="Portrait officiel de Théodore Gbovou, Président de Climate Invest" data-i18n-attr="alt:hero.portraitAlt" />
+              </div>
+              <div class="portrait-meta">
+                <div class="portrait-meta-title" data-i18n="hero.metaTitle">Jeune délégué national</div>
+                <div class="portrait-meta-sub" data-i18n="hero.metaSub">COP31 - République du Bénin</div>
+              </div>
             </div>
           </div>
 
@@ -99,275 +133,694 @@
       </div>
     </section>
 
-    <!-- MISSION ─────────────────────────────── -->
-    <section class="section bg-white" id="mission">
+    <!-- 2. PROFIL (Refonte fidèle à la maquette Image 2) ─── -->
+    <section class="section section-profil bg-white" id="profil" aria-labelledby="profil-title">
       <div class="container">
+        <div class="profil-showcase reveal">
 
-        <div class="mission-intro reveal">
-          <h2 class="section-heading">Expertise de terrain<br><em>en finance climatique</em></h2>
-          <p class="mission-lead">Climate Invest accompagne les entreprises et les développeurs de projets dans la
-            mesure, la certification et la valorisation de leurs actifs climatiques.</p>
-        </div>
+          <!-- Panneau gauche foncé (conforme à la colonne gauche de la maquette) -->
+          <div class="profil-dark-panel">
+            <div class="profil-dark-content">
+              <div class="profil-dark-header">
+                <span class="profil-dark-kicker" data-i18n="profil.kicker">Mon parcours &amp; ma vision</span>
+                <span class="profil-dark-badge" data-i18n="profil.badge">Afrique de l'Ouest</span>
+              </div>
 
-        <div class="mission-body">
-          <div class="mission-services">
-            <div class="service-item reveal" id="service-1">
-              <h3>Actifs environnementaux</h3>
-              <p>Identifier, sécuriser et valoriser les actifs environnementaux selon les standards reconnus du marché
-                carbone.</p>
-            </div>
-            <div class="service-item reveal" id="service-2">
-              <h3>Trajectoires bas-carbone</h3>
-              <p>Concevoir des itinéraires de décarbonation conformes à l'ISO 14064 et au GHG Protocol.</p>
-            </div>
-            <div class="service-item reveal" id="service-3">
-              <h3>Données certifiées</h3>
-              <p>Transformer les données climatiques brutes en instruments de croissance fiables et certifiés.</p>
+              <h2 class="profil-dark-title" id="profil-title" data-i18n="profil.title">
+                Mon engagement de terrain pour la finance climatique africaine
+              </h2>
+
+              <p class="profil-dark-lead" data-i18n="profil.lead">
+                Je consacre mon parcours aux mécanismes concrets qui permettent de financer, d'auditer et de valoriser l'action climatique en Afrique de l'Ouest. À la présidence de Climate Invest, j'associe une exigence technique sans compromis et la maîtrise des négociations multilatérales pour accompagner nos entreprises, nos institutions et nos porteurs de projets vers des résultats tangibles et mesurables.
+              </p>
+
+              <div class="profil-dark-footer">
+                <div class="profil-meta-item">
+                  <span class="profil-meta-label" data-i18n="profil.metaLabel">Mandat &amp; Présidence</span>
+                  <span class="profil-meta-val" data-i18n="profil.metaVal">Climate Invest - Délégué COP31</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="mission-institutional reveal" id="mission-inst">
-            <h3 class="inst-title">Partenaire technique privé de terrain</h3>
-            <p class="inst-text">Climate Invest intervient comme <strong>opérateur d'exécution et intégrateur
-                MRV</strong> pour concrétiser les objectifs de la Contribution Déterminée Nationale (CDN 3.0) du Bénin.
+          <!-- Colonne droite : 3 cartes horizontales superposées à cheval sur le panneau foncé -->
+          <div class="profil-cards-col">
+
+            <!-- Carte 1 : 8 ans de terrain -->
+            <article class="profil-card profil-card--1">
+              <div class="profil-card-badge" aria-hidden="true">
+                <!-- Boussole de terrain et cadran d'expertise -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <polygon points="12 8 8 16 16 12 12 8"/>
+                </svg>
+              </div>
+              <div class="profil-card-body">
+                <h3 class="profil-card-title">
+                  <span class="profil-card-stat" data-counter="8" data-suffix=" ans" data-i18n-attr="data-suffix:counter.years">8 ans</span> <span data-i18n="profil.card1.title">d'expérience et d'interventions directes</span>
+                </h3>
+                <p class="profil-card-text" data-i18n="profil.card1.text">
+                  Huit années d'audits, de diagnostics agronomiques et d'accompagnement direct sur le terrain en Afrique de l'Ouest auprès des acteurs publics et privés.
+                </p>
+              </div>
+            </article>
+
+            <!-- Carte 2 : Article 6 de l'Accord de Paris -->
+            <article class="profil-card profil-card--2">
+              <div class="profil-card-badge" aria-hidden="true">
+                <!-- Traités multilatéraux, balance ITMOs et souveraineté carbone -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3v18M3 8l9-5 9 5M6 13l-3 4h6l-3-4zM18 13l-3 4h6l-3-4z"/>
+                  <path d="M5 21h14"/>
+                </svg>
+              </div>
+              <div class="profil-card-body">
+                <h3 class="profil-card-title" data-i18n="profil.card2.title">Article 6 de l'Accord de Paris</h3>
+                <p class="profil-card-text" data-i18n="profil.card2.text">
+                  Je structure les mécanismes de coopération bilatérale, les transferts d'ITMOs et les modèles de valorisation carbone qui protègent la souveraineté de nos États tout en attirant des capitaux privés d'envergure.
+                </p>
+              </div>
+            </article>
+
+            <!-- Carte 3 : Ingénierie & Protocoles MRV -->
+            <article class="profil-card profil-card--3">
+              <div class="profil-card-badge" aria-hidden="true">
+                <!-- Numérisation MRV, capteurs de précision et certification -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="3"/>
+                  <path d="M8 12h8M12 8v8"/>
+                  <circle cx="12" cy="12" r="2.5"/>
+                </svg>
+              </div>
+              <div class="profil-card-body">
+                <h3 class="profil-card-title" data-i18n="profil.card3.title">Ingénierie &amp; Protocoles MRV</h3>
+                <p class="profil-card-text" data-i18n="profil.card3.text">
+                  Je pilote la numérisation de la mesure, de la notification et de la vérification de l'impact carbone selon les standards internationaux les plus rigoureux (ISO 14064, GHG Protocol).
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COP31 ──────────────────────────────── -->
+    <section class="section section-cop bg-white" id="cop31" aria-labelledby="cop31-title">
+      <div class="container">
+
+        <div class="cop-showcase reveal">
+
+          <!-- Colonne gauche : Panneau vert foncé (conforme à la maquette) -->
+          <div class="cop-showcase-panel">
+            <div class="cop-panel-content">
+              <p class="cop-panel-kicker" data-i18n="cop.kicker">Mon mandat diplomatique</p>
+              <h2 class="cop-panel-title" id="cop31-title" data-i18n="cop.title">Porter la voix du Bénin à la COP31</h2>
+              <p class="cop-panel-lead" data-i18n="cop.lead">
+                J'ai l'honneur d'avoir été sélectionné pour représenter la jeunesse béninoise à la 31<sup>e</sup> Conférence des Parties sur les changements climatiques (COP31), organisée en Turquie.
+              </p>
+              <p class="cop-panel-sub" data-i18n="cop.sub">
+                À la table des négociations, je défends une diplomatie environnementale d'action : rendre les financements d'adaptation concrets pour l'Afrique de l'Ouest, sécuriser l'application de l'Article 6 et valoriser le potentiel écologique et économique de nos territoires.
+              </p>
+
+              <div class="cop-verified-pill">
+                <span class="cop-check-circle" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3.5 8.5l3 3 6-6"/>
+                  </svg>
+                </span>
+                <span data-i18n="cop.verified">Mandat officiel de la jeunesse béninoise - COP31</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Centre : Smartphone Mockup superposé à cheval sur la bordure -->
+          <div class="cop-phone-wrap" aria-hidden="true">
+            <div class="cop-phone-mockup">
+              <div class="cop-phone-speaker"></div>
+              <div class="cop-phone-screen">
+                <img src="assets/img/projet-riziculture.jpg" alt="" class="cop-phone-bg" />
+                
+                <div class="cop-phone-ui">
+                  <div class="cop-phone-statusbar">
+                    <span class="cop-status-time">09:41</span>
+                    <span class="cop-status-icons">
+                      <svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor"><path d="M2 11h2v3H2zm3-3h2v6H5zm3-3h2v9H8zm3-3h2v12h-2z"/></svg>
+                      <svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor"><path d="M14 6.5A6.5 6.5 0 0 0 1.5 6.5a.5.5 0 0 0 .5.5 5.5 5.5 0 0 1 11 0 .5.5 0 0 0 .5-.5z"/><circle cx="8" cy="11.5" r="1.5"/></svg>
+                    </span>
+                  </div>
+
+                  <div class="cop-phone-topchip">
+                    <span class="cop-chip-flag">🇧🇯 🇹🇷</span>
+                    <span data-i18n="cop.phoneChip">COP31 - Turquie</span>
+                  </div>
+
+                  <div class="cop-phone-card">
+                    <div class="cop-phone-avatar">
+                      <img src="assets/img/theodore-gbovou.jpg" alt="" />
+                    </div>
+                    <div class="cop-phone-info">
+                      <span class="cop-phone-name">Théodore Gbovou</span>
+                      <span class="cop-phone-role" data-i18n="cop.phoneRole">Jeune Délégué Climat, Bénin</span>
+                      <span class="cop-phone-badge" data-i18n="cop.phoneBadge">Article 6 &amp; Négociations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : 3 étapes avec flèches connectrices et pastilles colorées -->
+          <div class="cop-steps-col">
+            
+            <div class="cop-steps-header">
+              <div class="cop-brand-mark" aria-hidden="true">
+                <img src="assets/img/logo-climate-invest.png" alt="" width="36" height="28" />
+                <span>Climate Invest</span>
+              </div>
+            </div>
+
+            <div class="cop-steps-list">
+
+              <!-- Étape 1 : Anneau vert foncé -->
+              <div class="cop-step-row cop-step-row--1">
+                <div class="cop-connector cop-conn--green" aria-hidden="true">
+                  <span class="cop-connector-dot"></span>
+                  <span class="cop-connector-line"></span>
+                  <span class="cop-connector-arrow"></span>
+                </div>
+                
+                <div class="cop-step-badge cop-badge--green" aria-hidden="true">
+                  <!-- Sceau officiel d'excellence / lauréat (ligne épurée sans clipart) -->
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="5"/>
+                    <path d="M8.2 13L7 21l5-3 5 3-1.2-8"/>
+                    <path d="M10 8l1.5 1.5 3-3"/>
+                  </svg>
+                </div>
+
+                <div class="cop-step-body">
+                  <h3 class="cop-step-title" data-i18n="cop.step1.title">Ma sélection sur concours national</h3>
+                  <p class="cop-step-text" data-i18n="cop.step1.text">
+                    J'ai été désigné lauréat du concours d'excellence organisé au Bénin pour désigner les délégués investis dans l'ingénierie et l'action climatique.
+                  </p>
+                  <span class="cop-step-pill cop-pill--green" data-i18n="cop.step1.pill">Phase 01 - Concours national</span>
+                </div>
+              </div>
+
+              <!-- Étape 2 : Anneau vert sauge -->
+              <div class="cop-step-row cop-step-row--2">
+                <div class="cop-connector cop-conn--sage" aria-hidden="true">
+                  <span class="cop-connector-dot"></span>
+                  <span class="cop-connector-line"></span>
+                  <span class="cop-connector-arrow"></span>
+                </div>
+
+                <div class="cop-step-badge cop-badge--sage" aria-hidden="true">
+                  <!-- Traité et protocole diplomatique CCNUCC (design sobre) -->
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <path d="M14 2v6h6"/>
+                    <path d="M16 13H8M16 17H8M10 9H8"/>
+                  </svg>
+                </div>
+
+                <div class="cop-step-body">
+                  <h3 class="cop-step-title" data-i18n="cop.step2.title">Mes deux mois de formation intensive</h3>
+                  <p class="cop-step-text" data-i18n="cop.step2.text">
+                    J'ai suivi un cycle préparatoire rigoureux sur les règles de négociation de la CCNUCC, les mécanismes de l'Article 6 et la diplomatie environnementale.
+                  </p>
+                  <span class="cop-step-pill cop-pill--sage" data-i18n="cop.step2.pill">Phase 02 - Négociations CCNUCC</span>
+                </div>
+              </div>
+
+              <!-- Étape 3 : Anneau ambré / or -->
+              <div class="cop-step-row cop-step-row--3">
+                <div class="cop-connector cop-conn--amber" aria-hidden="true">
+                  <span class="cop-connector-dot"></span>
+                  <span class="cop-connector-line"></span>
+                  <span class="cop-connector-arrow"></span>
+                </div>
+
+                <div class="cop-step-badge cop-badge--amber" aria-hidden="true">
+                  <!-- Sommet international / méridiens diplomatiques -->
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 3a14.5 14.5 0 0 0 0 18M12 3a14.5 14.5 0 0 1 0 18M3 12h18"/>
+                  </svg>
+                </div>
+
+                <div class="cop-step-body">
+                  <h3 class="cop-step-title" data-i18n="cop.step3.title">Mon mandat officiel en Turquie</h3>
+                  <p class="cop-step-text" data-i18n="cop.step3.text">
+                    Je siégerai au sein de la délégation béninoise à la COP31 pour négocier des mécanismes concrets d'adaptation et des flux de finance durable équitables pour l'Afrique.
+                  </p>
+                  <span class="cop-step-pill cop-pill--amber" data-i18n="cop.step3.pill">Phase 03 - Sommet COP31</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CLIMATE INVEST ─────────────────────── -->
+    <section class="section bg-offwhite" id="climate-invest" aria-labelledby="ci-title">
+      <div class="container">
+        <div class="ci-redesign-grid">
+
+          <!-- Colonne gauche : Carte visuelle avec badges superposés (selon la maquette de référence) -->
+          <div class="ci-visual-wrap reveal">
+            <div class="ci-photo-card">
+              <!-- Badge circulaire haut-gauche (vert foncé avec icône & libellé) -->
+              <div class="ci-badge ci-badge--tl" aria-hidden="true">
+                <span class="ci-badge-icon">
+                  <!-- Sceau d'audit technique certifié (sobre, sans bouclier générique) -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 3"/>
+                    <circle cx="12" cy="12" r="1.5"/>
+                  </svg>
+                </span>
+                <span class="ci-badge-label" data-i18n="ci.badge">Opérateur MRV</span>
+              </div>
+
+              <!-- Image du terrain agricole durable / projets Climate Invest -->
+              <div class="ci-photo-frame">
+                <img src="assets/img/climate-invest-terrain.jpg" width="1280" height="720" loading="lazy"
+                  alt="Projet de terrain Climate Invest : agriculture résiliente et gestion durable au Bénin" data-i18n-attr="alt:ci.photoAlt" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : Présentation, compétences et boutons d'action -->
+          <div class="ci-content-wrap reveal">
+            <p class="section-kicker" data-i18n="ci.kicker">Mon entreprise &amp; mon outil d'action</p>
+            <h2 class="section-heading" id="ci-title" data-i18n="ci.title">Climate Invest : l'ingénierie que j'ai bâtie pour agir</h2>
+            
+            <p class="lead" data-i18n="ci.lead">
+              J'ai fondé et je préside Climate Invest pour doter l'Afrique de l'Ouest d'un cabinet d'ingénierie, d'audit et de finance durable de référence. Avec mes équipes au Bénin, nous accompagnons les entreprises, les porteurs de projets et les institutions dans la mesure, la certification et la valorisation financière de leurs actifs climatiques.
             </p>
-            <p class="inst-note">Les transferts d'ITMOs relèvent de la souveraineté stricte de l'État, en conformité
-              avec l'Article 6 de l'Accord de Paris.</p>
-            <div class="inst-tags">
-              <span>CDN 3.0 Bénin</span>
-              <span>Article 6</span>
-              <span>MRV</span>
-              <span>ITMOs</span>
-              <span>ISO 14064</span>
+
+            <div class="ci-timeline" id="ciTimeline" role="region" aria-label="Cycle d'intervention Climate Invest" data-i18n-attr="aria-label:ci.timelineAria">
+              <div class="ci-timeline-rail" aria-hidden="true">
+                <span class="ci-timeline-progress" id="ciTimelineProgress"></span>
+              </div>
+
+              <div class="ci-timeline-steps">
+                <!-- Étape 1 -->
+                <div class="ci-timeline-step is-active" data-step="1">
+                  <div class="ci-step-marker" aria-hidden="true">
+                    <span class="ci-step-dot"></span>
+                    <span class="ci-step-pulse"></span>
+                  </div>
+                  <div class="ci-step-content">
+                    <div class="ci-step-header">
+                      <span class="ci-chevron-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 12 12"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      <span class="ci-chevron-badge">Phase 01</span>
+                      <h3 class="ci-step-title" data-i18n="ci.step1.title">Actifs environnementaux</h3>
+                    </div>
+                    <p class="ci-step-desc" data-i18n="ci.step1.text">
+                      Avec mes équipes, j'identifie, je modélise et je sécurise vos réductions d'émissions pour les valoriser selon les standards les plus exigeants du marché carbone international.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="ci-timeline-step" data-step="2">
+                  <div class="ci-step-marker" aria-hidden="true">
+                    <span class="ci-step-dot"></span>
+                    <span class="ci-step-pulse"></span>
+                  </div>
+                  <div class="ci-step-content">
+                    <div class="ci-step-header">
+                      <span class="ci-chevron-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 12 12"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      <span class="ci-chevron-badge">Phase 02</span>
+                      <h3 class="ci-step-title" data-i18n="ci.step2.title">Trajectoires bas-carbone</h3>
+                    </div>
+                    <p class="ci-step-desc" data-i18n="ci.step2.text">
+                      Je conçois des feuilles de route de décarbonation réalistes, ambitieuses et conformes aux exigences strictes de l'ISO 14064 et du GHG Protocol.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="ci-timeline-step" data-step="3">
+                  <div class="ci-step-marker" aria-hidden="true">
+                    <span class="ci-step-dot"></span>
+                    <span class="ci-step-pulse"></span>
+                  </div>
+                  <div class="ci-step-content">
+                    <div class="ci-step-header">
+                      <span class="ci-chevron-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 12 12"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      <span class="ci-chevron-badge">Phase 03</span>
+                      <h3 class="ci-step-title" data-i18n="ci.step3.title">Intégrateur MRV &amp; Données certifiées</h3>
+                    </div>
+                    <p class="ci-step-desc" data-i18n="ci.step3.text">
+                      J'interviens sur le terrain avec Climate Invest comme partenaire technique de référence en appui direct aux objectifs de la CDN du Bénin et à l'Article 6 de l'Accord de Paris.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ci-cta-row">
+              <a href="https://www.climateinvest.bj" class="btn-ci-pill" target="_blank" rel="noopener" id="ci-official-btn">
+                <span class="btn-ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M2.8 10h14.4M10 2.6a11.5 11.5 0 0 1 0 14.8M10 2.6a11.5 11.5 0 0 0 0 14.8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                  </svg>
+                </span>
+                <span data-i18n="ci.visit">Visiter climateinvest.bj</span>
+                <span class="btn-ci-arrow" aria-hidden="true">↗</span>
+              </a>
+
+              <a href="#contact" class="btn-ci-link" id="ci-contact-link" data-i18n="ci.contact">Échanger avec moi</a>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <!-- PROGRAMME POST-COP31 ─────────────────────────────
-         Cards stack on scroll — position: sticky cascade
-    ──────────────────────────────────────────────────── -->
-    <section class="section-prog bg-forest" id="programme">
-
-      <!-- En-tête de section — défile normalement -->
-      <div class="container prog-head">
-        <div class="prog-header">
-          <h2 class="section-heading inv reveal">Programme<br>post-COP31</h2>
-          <p class="prog-desc reveal">Trois projets actifs au Bénin dans le cadre du programme post-COP31.</p>
-        </div>
-      </div>
-
-      <!-- Pile de cartes superposées au défilement -->
-      <div class="prog-stack">
-
-        <div class="stack-slot" style="--i: 0" id="proj-1">
-          <article class="stack-card">
-            <div class="stack-card-top">
-              <div class="stack-meta">
-                <span class="stack-num">01</span>
-                <div class="stack-tags">
-                  <span class="ptag">Riziculture</span>
-                  <span class="ptag">MRV</span>
-                  <span class="ptag">AWD</span>
-                </div>
-              </div>
-              <div class="stack-stat">
-                <span class="stat-value">−45 %</span>
-                <span class="stat-label">émissions CH₄</span>
-              </div>
-            </div>
-            <h3 class="stack-card-title">Numérisation MRV des périmètres rizicoles</h3>
-            <p class="stack-card-text">Accompagnement technique et numérisation MRV de <strong>100 ha de périmètres
-                rizicoles</strong> (bas-fonds) par l'irrigation intermittente AWD (<em>Alternate Wetting and
-                Drying</em>), avec une réduction mesurée de 45 % des émissions de méthane (CH₄).</p>
-          </article>
-        </div>
-
-        <div class="stack-slot" style="--i: 1" id="proj-2">
-          <article class="stack-card">
-            <div class="stack-card-top">
-              <div class="stack-meta">
-                <span class="stack-num">02</span>
-                <div class="stack-tags">
-                  <span class="ptag">Sols</span>
-                  <span class="ptag">Biochar</span>
-                  <span class="ptag">SOC MRV</span>
-                </div>
-              </div>
-              <div class="stack-stat">
-                <span class="stat-value">1 000 ha</span>
-                <span class="stat-label">sols traités</span>
-              </div>
-            </div>
-            <h3 class="stack-card-title">Restauration des sols et séquestration carbone</h3>
-            <p class="stack-card-text">Diagnostic physico-chimique, fertilisation durable et amendement
-              <strong>Biochar</strong> pour restaurer la fertilité et mesurer la séquestration du carbone organique (SOC
-              MRV) sur <strong>1 000 ha</strong>.</p>
-          </article>
-        </div>
-
-        <div class="stack-slot" style="--i: 2" id="proj-3">
-          <article class="stack-card stack-card--last">
-            <div class="stack-card-top">
-              <div class="stack-meta">
-                <span class="stack-num">03</span>
-                <div class="stack-tags">
-                  <span class="ptag">PME</span>
-                  <span class="ptag">ISO 14064-1</span>
-                  <span class="ptag">Décarbonation</span>
-                </div>
-              </div>
-              <div class="stack-stat">
-                <span class="stat-value">30</span>
-                <span class="stat-label">PME accompagnées</span>
-              </div>
-            </div>
-            <h3 class="stack-card-title">Décarbonation des PME et agro-industries</h3>
-            <p class="stack-card-text">Co-financement des diagnostics d'empreinte carbone (ISO 14064-1) et élaboration
-              de feuilles de route de décarbonation pour <strong>30 PME et agro-industries</strong>.</p>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- MoU ─────────────────────────────────── -->
-    <section class="section bg-offwhite" id="mou">
+    <!-- 5. PROJETS ────────────────────────────── -->
+    <section class="section section-projects bg-white" id="projets" aria-labelledby="projets-title">
       <div class="container">
-
-        <div class="mou-header reveal">
-          <h2 class="section-heading">Manifestation d'intérêt (MoU)</h2>
-          <p class="mou-intro-text">Le MoU formalise votre entrée dans le programme. Choisissez l'option adaptée à votre
-            statut pour activer votre signature.</p>
+        
+        <div class="projects-head reveal">
+          <p class="section-kicker" data-i18n="projects.kicker">Mon action opérationnelle de terrain</p>
+          <div class="projects-header-row">
+            <h2 class="section-heading" id="projets-title" data-i18n="projects.title">Les projets que je pilote avec mes équipes</h2>
+            <p class="projects-desc" data-i18n="projects.desc">
+              Trois programmes d'envergure que nous déployons concrètement au Bénin pour conjuguer agriculture résiliente, régénération des sols et décarbonation productive.
+            </p>
+          </div>
         </div>
 
-        <div class="mou-grid" id="signature">
-
-          <div class="mou-card reveal" id="mou-individuel">
-            <div class="mou-header-card">
-              <p class="mou-audience">Individu · Chercheur · Expert</p>
-              <h3 class="mou-title">MoU individuel</h3>
-              <div class="mou-price-row">
-                <span class="price-amount">100</span><span class="price-cur">€</span>
+        <div class="projects-track-wrap reveal">
+          <div class="projects-track" id="projectsTrack" role="region" aria-label="Carrousel des projets" data-i18n-attr="aria-label:projects.trackAria">
+            
+            <!-- Projet 1 : Riziculture & MRV -->
+            <article class="project-card is-active" data-project-index="0">
+              <div class="project-card-image">
+                <img src="assets/img/projet-riziculture.jpg" width="600" height="380" loading="lazy"
+                  alt="Numérisation MRV des périmètres rizicoles au Bénin" data-i18n-attr="alt:projects.p1.alt" />
               </div>
-            </div>
-            <ul class="mou-features">
-              <li>Activation du MoU d'intention individuel</li>
-              <li>Rapport d'impact synthétique des 3 projets</li>
-              <li>Attestation d'engagement climat</li>
-              <li>Accès au lien Calendly pour la session B2B post-COP31</li>
-            </ul>
-            <a href="https://me.fedapay.com/MOU100EUROS" class="mou-btn" target="_blank" rel="noopener"
-              id="btn-mou-indiv">
-              Activer le MoU individuel
-            </a>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p1.title">Riziculture &amp; MRV</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Gestion AWD & Réduction CH₄" data-i18n-attr="title:projects.p1.badge">
+                  <!-- Icône monoline gestion de l'eau et des bas-fonds -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.5c0 0-6 7.5-6 11.5a6 6 0 0 0 12 0c0-4-6-11.5-6-11.5z"/>
+                    <path d="M9 14h6M12 11v6"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="100" data-suffix=" ha">100 ha</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p1.label">Périmètres pilotes AWD</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p1.text">
+                  J'accompagne les producteurs sur 100 hectares de bas-fonds rizicoles par l'irrigation alternée AWD (<em>Alternate Wetting and Drying</em>) : nous réduisons d'environ 45 % les émissions de méthane tout en numérisant le suivi MRV pour certifier leurs efforts.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 2 : Sols & Biochar -->
+            <article class="project-card" data-project-index="1">
+              <div class="project-card-image">
+                <img src="assets/img/projet-biochar.jpg" width="600" height="380" loading="lazy"
+                  alt="Restauration des sols et séquestration carbone par le Biochar au Bénin" data-i18n-attr="alt:projects.p2.alt" />
+              </div>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p2.title">Sols &amp; Biochar</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Séquestration carbone dans les sols" data-i18n-attr="title:projects.p2.badge">
+                  <!-- Icône strates du sol et pousse végétale -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 20h20M2 16h20"/>
+                    <path d="M12 16V4M7 9l5-5 5 5"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="1000" data-suffix=" ha" data-format="spaced">1 000 ha</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p2.label">Diagnostic &amp; Biochar</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p2.text">
+                  Je pilote le diagnostic agronomique et l'amendement en biochar sur 1 000 hectares pour régénérer durablement la fertilité de nos sols et quantifier la séquestration de carbone organique (SOC MRV) selon des protocoles stricts.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 3 : Décarbonation PME -->
+            <article class="project-card" data-project-index="2">
+              <div class="project-card-image">
+                <img src="assets/img/projet-pme.jpg" width="600" height="380" loading="lazy"
+                  alt="Décarbonation et transition énergétique des PME agro-industrielles au Bénin" data-i18n-attr="alt:projects.p3.alt" />
+              </div>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p3.title">Décarbonation PME</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Bilans ISO 14064-1 & Décarbonation" data-i18n-attr="title:projects.p3.badge">
+                  <!-- Icône transition énergétique et industrielle sobre -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18M5 21V9l7 4V9l7 4v8"/>
+                    <path d="M9 17h2M13 17h2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="30" data-suffix=" PME" data-i18n-attr="data-suffix:counter.smes">30 PME</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p3.label">ISO 14064 &amp; Trajectoires</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p3.text">
+                  J'appuie directement les dirigeants de 30 PME et agro-industries béninoises dans la réalisation de leurs bilans d'empreinte carbone ISO 14064-1 et la co-élaboration de trajectoires de décarbonation opérationnelles et rentables.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
           </div>
 
-          <div class="mou-card mou-card--dark reveal" id="mou-org">
-            <div class="mou-header-card">
-              <p class="mou-audience">PME · ONG · Institution</p>
-              <h3 class="mou-title">MoU organisationnel</h3>
-              <div class="mou-price-row">
-                <span class="price-amount">300</span><span class="price-cur">€</span>
-              </div>
+          <!-- Contrôles de navigation carrousel avec pastilles animées -->
+          <div class="projects-carousel-nav" aria-label="Navigation des projets" data-i18n-attr="aria-label:projects.navAria">
+            <button type="button" class="btn-carousel" id="projectPrev" aria-label="Projet précédent" data-i18n-attr="aria-label:projects.prev">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+
+            <!-- Indicateurs de pastilles animées -->
+            <div class="projects-dots" id="projectsDots" role="tablist" aria-label="Indicateurs des projets" data-i18n-attr="aria-label:projects.dotsAria">
+              <button type="button" class="pdot is-active" role="tab" aria-selected="true" aria-label="Projet 1 : Riziculture & MRV" data-index="0" data-i18n-attr="aria-label:projects.dot1"></button>
+              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 2 : Sols & Biochar" data-index="1" data-i18n-attr="aria-label:projects.dot2"></button>
+              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 3 : Décarbonation PME" data-index="2" data-i18n-attr="aria-label:projects.dot3"></button>
             </div>
-            <ul class="mou-features">
-              <li>Activation du MoU d'intention organisationnel</li>
-              <li>Mention officielle du logo et du nom dans le rapport annuel</li>
-              <li>Attestation RSE/ESG pour l'organisation</li>
-              <li>Accès au lien Calendly pour la session B2B post-COP31</li>
-            </ul>
-            <!--
-              Note : le lien FedaPay source pointe sur /MOU100EUROS pour les deux offres.
-              Le tarif 300 € est issu de la capture de référence.
-              À mettre à jour dès qu'un lien spécifique 300 € est disponible.
-            -->
-            <a href="https://me.fedapay.com/MOU100EUROS" class="mou-btn mou-btn--gold" target="_blank" rel="noopener"
-              id="btn-mou-org">
-              Activer le MoU organisationnel
-            </a>
+
+            <button type="button" class="btn-carousel" id="projectNext" aria-label="Projet suivant" data-i18n-attr="aria-label:projects.next">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
           </div>
 
+          <p class="projects-note" data-i18n="projects.note">
+            * Les chiffres indiqués décrivent le périmètre opérationnel de nos interventions. Le calendrier et l'état d'avancement détaillé vous sont communiqués sur simple demande.
+          </p>
         </div>
-
-        <p class="mou-disclaimer">
-          Une question avant de vous engager ?
-          <a href="https://wa.me/2290194772347?text=Bonjour%20CLIMATE%20INVEST%2C%20j%27ai%20rencontr%C3%A9%20Th%C3%A9odore%20et%20j%27ai%20scann%C3%A9%20son%20badge%20%C3%A0%20la%20COP-31..."
-            target="_blank" rel="noopener" id="mou-wa-link">Écrivez sur WhatsApp.</a>
-        </p>
 
       </div>
     </section>
-
-    <!-- SESSION B2B ──────────────────────────── -->
-    <section class="section bg-white" id="b2b">
-      <div class="container">
-        <div class="b2b-grid">
-
-          <div class="b2b-left reveal">
-            <h2 class="section-heading">Session B2B<br><em>après validation du MoU</em></h2>
-            <p class="b2b-lead">Le lien Calendly est transmis automatiquement après validation du MoU, pour planifier
-              votre session de travail à distance.</p>
-            <a href="#mou" class="btn btn-primary" id="b2b-cta">Accéder au MoU</a>
-          </div>
-
-          <div class="b2b-right">
-            <dl class="b2b-list">
-              <div class="b2b-item reveal" id="b2b-1">
-                <dt>Timing</dt>
-                <dd>Session planifiée une à deux semaines après la COP31, selon les disponibilités.</dd>
-              </div>
-              <div class="b2b-item reveal" id="b2b-2">
-                <dt>Objectif</dt>
-                <dd>Étudier les opportunités de passage à l'échelle ou stabiliser les engagements dans un cadre
-                  structuré.</dd>
-              </div>
-              <div class="b2b-item reveal" id="b2b-3">
-                <dt>Confidentialité</dt>
-                <dd>Les données brutes et les fichiers SIG ne sont transmis qu'en présence d'un contrat ferme et d'un
-                  NDA signé.</dd>
-              </div>
-            </dl>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT ─────────────────────────────── -->
-    <footer class="footer" id="contact">
-      <div class="container footer-inner">
-
-        <div class="footer-top">
-          <div class="footer-identity">
-            <span class="nav-logo-mark footer-mark">CI</span>
-            <div>
-              <p class="footer-name">Climate Invest</p>
-              <p class="footer-tagline">Cabinet d'ingénierie, audit et finance durable · Bénin</p>
-            </div>
-          </div>
-          <div class="footer-contacts">
-            <a href="mailto:contact@climateinvest.bj" id="footer-email">contact@climateinvest.bj</a>
-            <a href="tel:+2290194772347" id="footer-phone">+229 01 94 77 23 47</a>
-            <a href="https://wa.me/2290194772347?text=Bonjour%20CLIMATE%20INVEST%2C%20j%27ai%20rencontr%C3%A9%20Th%C3%A9odore%20et%20j%27ai%20scann%C3%A9%20son%20badge%20%C3%A0%20la%20COP-31..."
-              target="_blank" rel="noopener" id="footer-wa">WhatsApp</a>
-            <a href="https://www.climateinvest.bj" target="_blank" rel="noopener" id="footer-site">climateinvest.bj</a>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Climate Invest. Tous droits réservés.</p>
-          <p class="footer-note">Démonstration indépendante · contenu issu de climateinvest.bj/cop31.html</p>
-        </div>
-
-      </div>
-    </footer>
 
   </main>
 
-  <script src="main.js"></script>
+  <!-- FOOTER HAUT DE GAMME & INSTITUTIONNEL ──────────────── -->
+  <footer class="footer" id="contact" role="contentinfo">
+    
+    <!-- Pré-footer : Bannière d'engagement direct -->
+    <div class="footer-pre">
+      <div class="container footer-pre-inner">
+        <div class="footer-pre-content">
+          <span class="footer-pre-badge" data-i18n="footer.badge">Coopération &amp; Diplomatie Carbone</span>
+          <h2 class="footer-pre-title" data-i18n="footer.title">Bâtissons ensemble une finance climatique souveraine et mesurable</h2>
+          <p class="footer-pre-desc" data-i18n="footer.desc">
+            Institutions, bailleurs internationaux, entreprises ou partenaires techniques : je me tiens à votre disposition pour concrétiser vos projets en Afrique de l'Ouest et dans le cadre de la COP31.
+          </p>
+        </div>
+        <div class="footer-pre-actions">
+          <a href="https://wa.me/2290194772347?text=Bonjour%20Th%C3%A9odore%2C%20je%20souhaite%20%C3%A9changer%20avec%20vous%20concernant..."
+            class="btn-footer-cta" target="_blank" rel="noopener" data-i18n-attr="href:footer.whatsappHref">
+            <span data-i18n="footer.whatsapp">Échanger sur WhatsApp</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a href="mailto:contact@climateinvest.bj" class="btn-footer-secondary">
+            <span data-i18n="footer.email">Envoyer un e-mail direct</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Corps principal du Footer : 4 colonnes structurées -->
+    <div class="footer-main">
+      <div class="container footer-grid">
+
+        <!-- Col 1 : Identité, Vision & Mandat (Grande photo de profil avec logo incrusté dedans) -->
+        <div class="footer-col footer-col--brand">
+          <div class="footer-leader-showcase">
+            <!-- Grande photo de profil avec le logo de l'entreprise affiché DEDANS -->
+            <div class="footer-avatar-master">
+              <div class="footer-avatar-circle">
+                <img src="assets/img/theodore-gbovou.jpg" width="112" height="112" alt="Théodore Gbovou, Président de Climate Invest" class="footer-avatar-img" data-i18n-attr="alt:footer.avatarAlt" />
+              </div>
+              <div class="footer-avatar-badge" title="Cabinet Climate Invest" data-i18n-attr="title:footer.badgeTitle">
+                <img src="assets/img/logo-climate-invest.png" width="50" height="38" alt="Logo Climate Invest" class="footer-badge-logo" data-i18n-attr="alt:footer.logoAlt" />
+              </div>
+            </div>
+
+            <div class="footer-brand-meta">
+              <h3 class="footer-brand-name">Théodore Gbovou</h3>
+              <p class="footer-brand-role" data-i18n="footer.role">Président de <strong>Climate Invest</strong></p>
+              <p class="footer-brand-event" data-i18n="footer.event">Jeune Délégué du Bénin à la COP31</p>
+            </div>
+          </div>
+
+          <p class="footer-brand-bio" data-i18n="footer.bio">
+            Depuis huit ans, j'arpente le terrain en Afrique de l'Ouest pour mettre l'Article 6 de l'Accord de Paris et les technologies MRV au service d'une finance carbone souveraine, rigoureuse et créatrice de valeur.
+          </p>
+
+          <div class="footer-pill-row">
+            <span class="footer-tag-pill">
+              <span class="footer-pill-dot" aria-hidden="true"></span>
+              <span data-i18n="footer.pill1">Mandat Officiel COP31 - République du Bénin</span>
+            </span>
+            <span class="footer-tag-pill" data-i18n="footer.pill2">Cabinet d'ingénierie &amp; Opérateur MRV</span>
+          </div>
+        </div>
+
+        <!-- Col 2 : Navigation directe -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#profil" class="footer-nav-link" data-i18n="footer.nav.profil">Mon profil &amp; ma vision</a></li>
+            <li><a href="#cop31" class="footer-nav-link" data-i18n="footer.nav.cop">Mandat COP31 - Turquie</a></li>
+            <li><a href="#climate-invest" class="footer-nav-link" data-i18n="footer.nav.ci">Cabinet Climate Invest</a></li>
+            <li><a href="#projets" class="footer-nav-link" data-i18n="footer.nav.projets">Mes projets de terrain</a></li>
+            <li><a href="#contact" class="footer-nav-link" data-i18n="footer.nav.contact">Prendre contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 : Programmes & Expertises -->
+        <div class="footer-col">
+          <h3 class="footer-col-title" data-i18n="footer.progTitle">Programmes &amp; Expertises</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#projets" class="footer-nav-link" data-i18n="footer.prog1">Riziculture durable &amp; AWD (100 ha)</a></li>
+            <li><a href="#projets" class="footer-nav-link" data-i18n="footer.prog2">Régénération Biochar &amp; Sols (1 000 ha)</a></li>
+            <li><a href="#projets" class="footer-nav-link" data-i18n="footer.prog3">Décarbonation &amp; ISO 14064 (30 PME)</a></li>
+            <li><a href="#profil" class="footer-nav-link" data-i18n="footer.prog4">Article 6 &amp; Négociations ITMOs</a></li>
+            <li><a href="#climate-invest" class="footer-nav-link" data-i18n="footer.prog5">Protocoles &amp; Technologies MRV</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 : Coordonnées & Ligne active -->
+        <div class="footer-col">
+          <h3 class="footer-col-title" data-i18n="footer.contactTitle">Contact &amp; Échanges</h3>
+          <div class="footer-contact-items">
+            <a href="tel:+2290194772347" class="footer-contact-link">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>
+              </span>
+              <span>+229 01 94 77 23 47</span>
+            </a>
+
+            <a href="mailto:contact@climateinvest.bj" class="footer-contact-link">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+              </span>
+              <span>contact@climateinvest.bj</span>
+            </a>
+
+            <a href="https://www.climateinvest.bj" target="_blank" rel="noopener" class="footer-contact-link">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17"/></svg>
+              </span>
+              <span>climateinvest.bj</span>
+            </a>
+
+            <div class="footer-location">
+              <span class="footer-location-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span data-i18n="footer.location">Cotonou, République du Bénin</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Barre inférieure de clôture -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-bottom-copy">
+          <p data-i18n="footer.copy">&copy; 2026 Théodore Gbovou - Tous droits réservés.</p>
+          <span class="footer-bottom-sep" aria-hidden="true">/</span>
+          <p class="footer-subtext" data-i18n="footer.subtext">Délégation de la jeunesse béninoise à la COP31 - République du Bénin</p>
+        </div>
+
+        <div class="footer-bottom-actions">
+          <div class="lang-switch lang-switch--footer" role="group" aria-label="Choisir la langue">
+            <button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="true" title="Français">
+              <span>FR</span>
+            </button>
+            <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false" title="English">
+              <span>EN</span>
+            </button>
+          </div>
+
+          <a href="#top" class="footer-top-btn" aria-label="Retourner en haut de page" data-i18n-attr="aria-label:footer.topAria">
+            <span data-i18n="footer.top">Haut de page</span>
+            <span class="footer-top-arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 13V3M4 7l4-4 4 4"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="i18n.js" defer></script>
+  <script src="main.js" defer></script>
 </body>
 
 </html>
