@@ -108,8 +108,8 @@
     'ci.visit': 'Visit climateinvest.bj',
     'ci.contact': 'Talk with me',
 
-    'projects.kicker': 'Post-COP31 programme',
-    'projects.title': 'The projects we are launching in Benin',
+    'projects.kicker': 'My operational field work',
+    'projects.title': 'The projects I lead with my teams',
     'projects.desc': 'Three large-scale programmes we are rolling out in Benin, combining resilient agriculture, soil regeneration and productive decarbonisation.',
     'projects.trackAria': 'Projects carousel',
     'projects.details': 'Project details',

@@ -60,10 +60,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#projets" class="nav-link" data-i18n="nav.projets">Mes projets</a></li>
         <li><a href="#profil" class="nav-link" data-i18n="nav.profil">Mon profil</a></li>
         <li><a href="#cop31" class="nav-link">COP31</a></li>
         <li><a href="#climate-invest" class="nav-link">Climate Invest</a></li>
+        <li><a href="#projets" class="nav-link" data-i18n="nav.projets">Mes projets</a></li>
         <li><a href="#mou" class="nav-link" data-i18n="nav.mou">Rejoindre</a></li>
         <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Me contacter</a></li>
       </ul>
@@ -145,156 +145,7 @@
       </div>
     </section>
 
-    <!-- 2. PROJETS — Programme post-COP31 (mis en avant) ────────────────────────────── -->
-    <section class="section section-projects bg-white" id="projets" aria-labelledby="projets-title">
-      <div class="container">
-        
-        <div class="projects-head reveal">
-          <p class="section-kicker" data-i18n="projects.kicker">Programme post-COP31</p>
-          <div class="projects-header-row">
-            <h2 class="section-heading" id="projets-title" data-i18n="projects.title">Les projets que nous lançons au Bénin</h2>
-            <p class="projects-desc" data-i18n="projects.desc">
-              Trois programmes d'envergure que nous déployons concrètement au Bénin pour conjuguer agriculture résiliente, régénération des sols et décarbonation productive.
-            </p>
-          </div>
-        </div>
-
-        <div class="projects-track-wrap reveal">
-          <div class="projects-track" id="projectsTrack" role="region" aria-label="Carrousel des projets" data-i18n-attr="aria-label:projects.trackAria">
-            
-            <!-- Projet 1 : Riziculture & MRV -->
-            <article class="project-card is-active" data-project-index="0">
-              <div class="project-card-image">
-                <img src="assets/img/projet-riziculture.jpg" width="600" height="380" loading="lazy"
-                  alt="Numérisation MRV des périmètres rizicoles au Bénin" data-i18n-attr="alt:projects.p1.alt" />
-              </div>
-              <div class="project-banner">
-                <div class="project-banner-title" data-i18n="projects.p1.title">Riziculture &amp; MRV</div>
-                <div class="project-banner-badge" aria-hidden="true" title="Gestion AWD & Réduction CH₄" data-i18n-attr="title:projects.p1.badge">
-                  <!-- Icône monoline gestion de l'eau et des bas-fonds -->
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2.5c0 0-6 7.5-6 11.5a6 6 0 0 0 12 0c0-4-6-11.5-6-11.5z"/>
-                    <path d="M9 14h6M12 11v6"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-pill">
-                  <span class="project-pill-val" data-counter="100" data-suffix=" ha">100 ha</span>
-                  <span class="project-pill-lbl" data-i18n="projects.p1.label">Périmètres pilotes AWD</span>
-                </div>
-                <p class="project-card-text" data-i18n="projects.p1.text">
-                  J'accompagne les producteurs sur 100 hectares de bas-fonds rizicoles par l'irrigation alternée AWD (<em>Alternate Wetting and Drying</em>) : nous réduisons d'environ 45 % les émissions de méthane tout en numérisant le suivi MRV pour certifier leurs efforts.
-                </p>
-                <hr class="project-card-divider" />
-                <a href="#contact" class="project-card-link">
-                  <span data-i18n="projects.details">Détails du projet</span>
-                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- Projet 2 : Fertisol Africa (Sols & Biochar) -->
-            <article class="project-card" data-project-index="1">
-              <div class="project-card-image">
-                <img src="assets/img/projet-biochar.jpg" width="600" height="380" loading="lazy"
-                  alt="Restauration des sols et séquestration carbone par le Biochar au Bénin" data-i18n-attr="alt:projects.p2.alt" />
-                <span class="project-award">
-                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="5" /><path d="M8.2 12.5 7 21l5-3 5 3-1.2-8.5" /></svg>
-                  <span data-i18n="projects.p2.award">Prix Union Africaine</span>
-                </span>
-              </div>
-              <div class="project-banner">
-                <div class="project-banner-title" data-i18n="projects.p2.title">Fertisol Africa</div>
-                <div class="project-banner-badge" aria-hidden="true" title="Séquestration carbone dans les sols" data-i18n-attr="title:projects.p2.badge">
-                  <!-- Icône strates du sol et pousse végétale -->
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 20h20M2 16h20"/>
-                    <path d="M12 16V4M7 9l5-5 5 5"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-pill">
-                  <span class="project-pill-val" data-counter="1000" data-suffix=" ha" data-format="spaced">1 000 ha</span>
-                  <span class="project-pill-lbl" data-i18n="projects.p2.label">Sols, Biochar &amp; SOC MRV</span>
-                </div>
-                <p class="project-card-text" data-i18n="projects.p2.text">
-                  Je pilote le diagnostic agronomique et l'amendement en biochar sur 1 000 hectares pour régénérer durablement la fertilité de nos sols et quantifier la séquestration de carbone organique (SOC MRV) selon des protocoles stricts.
-                </p>
-                <hr class="project-card-divider" />
-                <a href="#contact" class="project-card-link">
-                  <span data-i18n="projects.details">Détails du projet</span>
-                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- Projet 3 : Décarbonation PME -->
-            <article class="project-card" data-project-index="2">
-              <div class="project-card-image">
-                <img src="assets/img/projet-pme.jpg" width="600" height="380" loading="lazy"
-                  alt="Décarbonation et transition énergétique des PME agro-industrielles au Bénin" data-i18n-attr="alt:projects.p3.alt" />
-              </div>
-              <div class="project-banner">
-                <div class="project-banner-title" data-i18n="projects.p3.title">Décarbonation PME</div>
-                <div class="project-banner-badge" aria-hidden="true" title="Bilans ISO 14064-1 & Décarbonation" data-i18n-attr="title:projects.p3.badge">
-                  <!-- Icône transition énergétique et industrielle sobre -->
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 21h18M5 21V9l7 4V9l7 4v8"/>
-                    <path d="M9 17h2M13 17h2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="project-card-body">
-                <div class="project-meta-pill">
-                  <span class="project-pill-val" data-counter="30" data-suffix=" PME" data-i18n-attr="data-suffix:counter.smes">30 PME</span>
-                  <span class="project-pill-lbl" data-i18n="projects.p3.label">ISO 14064 &amp; Trajectoires</span>
-                </div>
-                <p class="project-card-text" data-i18n="projects.p3.text">
-                  J'appuie directement les dirigeants de 30 PME et agro-industries béninoises dans la réalisation de leurs bilans d'empreinte carbone ISO 14064-1 et la co-élaboration de trajectoires de décarbonation opérationnelles et rentables.
-                </p>
-                <hr class="project-card-divider" />
-                <a href="#contact" class="project-card-link">
-                  <span data-i18n="projects.details">Détails du projet</span>
-                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
-                </a>
-              </div>
-            </article>
-
-          </div>
-
-          <!-- Contrôles de navigation carrousel avec pastilles animées -->
-          <div class="projects-carousel-nav" aria-label="Navigation des projets" data-i18n-attr="aria-label:projects.navAria">
-            <button type="button" class="btn-carousel" id="projectPrev" aria-label="Projet précédent" data-i18n-attr="aria-label:projects.prev">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 12H5M12 19l-7-7 7-7"/>
-              </svg>
-            </button>
-
-            <!-- Indicateurs de pastilles animées -->
-            <div class="projects-dots" id="projectsDots" role="tablist" aria-label="Indicateurs des projets" data-i18n-attr="aria-label:projects.dotsAria">
-              <button type="button" class="pdot is-active" role="tab" aria-selected="true" aria-label="Projet 1 : Riziculture & MRV" data-index="0" data-i18n-attr="aria-label:projects.dot1"></button>
-              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 2 : Fertisol Africa" data-index="1" data-i18n-attr="aria-label:projects.dot2"></button>
-              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 3 : Décarbonation PME" data-index="2" data-i18n-attr="aria-label:projects.dot3"></button>
-            </div>
-
-            <button type="button" class="btn-carousel" id="projectNext" aria-label="Projet suivant" data-i18n-attr="aria-label:projects.next">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
-          </div>
-
-          <p class="projects-note" data-i18n="projects.note">
-            * Les chiffres indiqués décrivent le périmètre opérationnel de nos interventions. Le calendrier et l'état d'avancement détaillé vous sont communiqués sur simple demande.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3. PROFIL (Refonte fidèle à la maquette Image 2) ─── -->
+    <!-- 2. PROFIL (Refonte fidèle à la maquette Image 2) ─── -->
     <section class="section section-profil bg-white" id="profil" aria-labelledby="profil-title">
       <div class="container">
         <div class="profil-showcase reveal">
@@ -391,7 +242,7 @@
       </div>
     </section>
 
-    <!-- 4. COP31 ──────────────────────────────── -->
+    <!-- 3. COP31 ──────────────────────────────── -->
     <section class="section section-cop bg-white" id="cop31" aria-labelledby="cop31-title">
       <div class="container">
 
@@ -554,7 +405,7 @@
       </div>
     </section>
 
-    <!-- 5. CLIMATE INVEST ─────────────────────── -->
+    <!-- 4. CLIMATE INVEST ─────────────────────── -->
     <section class="section bg-offwhite" id="climate-invest" aria-labelledby="ci-title">
       <div class="container">
         <div class="ci-redesign-grid">
@@ -682,6 +533,155 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- 5. PROJETS ────────────────────────────── -->
+    <section class="section section-projects bg-white" id="projets" aria-labelledby="projets-title">
+      <div class="container">
+        
+        <div class="projects-head reveal">
+          <p class="section-kicker" data-i18n="projects.kicker">Mon action opérationnelle de terrain</p>
+          <div class="projects-header-row">
+            <h2 class="section-heading" id="projets-title" data-i18n="projects.title">Les projets que je pilote avec mes équipes</h2>
+            <p class="projects-desc" data-i18n="projects.desc">
+              Trois programmes d'envergure que nous déployons concrètement au Bénin pour conjuguer agriculture résiliente, régénération des sols et décarbonation productive.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-track-wrap reveal">
+          <div class="projects-track" id="projectsTrack" role="region" aria-label="Carrousel des projets" data-i18n-attr="aria-label:projects.trackAria">
+            
+            <!-- Projet 1 : Riziculture & MRV -->
+            <article class="project-card is-active" data-project-index="0">
+              <div class="project-card-image">
+                <img src="assets/img/projet-riziculture.jpg" width="600" height="380" loading="lazy"
+                  alt="Numérisation MRV des périmètres rizicoles au Bénin" data-i18n-attr="alt:projects.p1.alt" />
+              </div>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p1.title">Riziculture &amp; MRV</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Gestion AWD & Réduction CH₄" data-i18n-attr="title:projects.p1.badge">
+                  <!-- Icône monoline gestion de l'eau et des bas-fonds -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.5c0 0-6 7.5-6 11.5a6 6 0 0 0 12 0c0-4-6-11.5-6-11.5z"/>
+                    <path d="M9 14h6M12 11v6"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="100" data-suffix=" ha">100 ha</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p1.label">Périmètres pilotes AWD</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p1.text">
+                  J'accompagne les producteurs sur 100 hectares de bas-fonds rizicoles par l'irrigation alternée AWD (<em>Alternate Wetting and Drying</em>) : nous réduisons d'environ 45 % les émissions de méthane tout en numérisant le suivi MRV pour certifier leurs efforts.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 2 : Fertisol Africa (Sols & Biochar) -->
+            <article class="project-card" data-project-index="1">
+              <div class="project-card-image">
+                <img src="assets/img/projet-biochar.jpg" width="600" height="380" loading="lazy"
+                  alt="Restauration des sols et séquestration carbone par le Biochar au Bénin" data-i18n-attr="alt:projects.p2.alt" />
+                <span class="project-award">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="5" /><path d="M8.2 12.5 7 21l5-3 5 3-1.2-8.5" /></svg>
+                  <span data-i18n="projects.p2.award">Prix Union Africaine</span>
+                </span>
+              </div>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p2.title">Fertisol Africa</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Séquestration carbone dans les sols" data-i18n-attr="title:projects.p2.badge">
+                  <!-- Icône strates du sol et pousse végétale -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 20h20M2 16h20"/>
+                    <path d="M12 16V4M7 9l5-5 5 5"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="1000" data-suffix=" ha" data-format="spaced">1 000 ha</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p2.label">Sols, Biochar &amp; SOC MRV</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p2.text">
+                  Je pilote le diagnostic agronomique et l'amendement en biochar sur 1 000 hectares pour régénérer durablement la fertilité de nos sols et quantifier la séquestration de carbone organique (SOC MRV) selon des protocoles stricts.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 3 : Décarbonation PME -->
+            <article class="project-card" data-project-index="2">
+              <div class="project-card-image">
+                <img src="assets/img/projet-pme.jpg" width="600" height="380" loading="lazy"
+                  alt="Décarbonation et transition énergétique des PME agro-industrielles au Bénin" data-i18n-attr="alt:projects.p3.alt" />
+              </div>
+              <div class="project-banner">
+                <div class="project-banner-title" data-i18n="projects.p3.title">Décarbonation PME</div>
+                <div class="project-banner-badge" aria-hidden="true" title="Bilans ISO 14064-1 & Décarbonation" data-i18n-attr="title:projects.p3.badge">
+                  <!-- Icône transition énergétique et industrielle sobre -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18M5 21V9l7 4V9l7 4v8"/>
+                    <path d="M9 17h2M13 17h2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-meta-pill">
+                  <span class="project-pill-val" data-counter="30" data-suffix=" PME" data-i18n-attr="data-suffix:counter.smes">30 PME</span>
+                  <span class="project-pill-lbl" data-i18n="projects.p3.label">ISO 14064 &amp; Trajectoires</span>
+                </div>
+                <p class="project-card-text" data-i18n="projects.p3.text">
+                  J'appuie directement les dirigeants de 30 PME et agro-industries béninoises dans la réalisation de leurs bilans d'empreinte carbone ISO 14064-1 et la co-élaboration de trajectoires de décarbonation opérationnelles et rentables.
+                </p>
+                <hr class="project-card-divider" />
+                <a href="#contact" class="project-card-link">
+                  <span data-i18n="projects.details">Détails du projet</span>
+                  <span class="project-card-arrow" aria-hidden="true">&#x2198;</span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Contrôles de navigation carrousel avec pastilles animées -->
+          <div class="projects-carousel-nav" aria-label="Navigation des projets" data-i18n-attr="aria-label:projects.navAria">
+            <button type="button" class="btn-carousel" id="projectPrev" aria-label="Projet précédent" data-i18n-attr="aria-label:projects.prev">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+
+            <!-- Indicateurs de pastilles animées -->
+            <div class="projects-dots" id="projectsDots" role="tablist" aria-label="Indicateurs des projets" data-i18n-attr="aria-label:projects.dotsAria">
+              <button type="button" class="pdot is-active" role="tab" aria-selected="true" aria-label="Projet 1 : Riziculture & MRV" data-index="0" data-i18n-attr="aria-label:projects.dot1"></button>
+              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 2 : Fertisol Africa" data-index="1" data-i18n-attr="aria-label:projects.dot2"></button>
+              <button type="button" class="pdot" role="tab" aria-selected="false" aria-label="Projet 3 : Décarbonation PME" data-index="2" data-i18n-attr="aria-label:projects.dot3"></button>
+            </div>
+
+            <button type="button" class="btn-carousel" id="projectNext" aria-label="Projet suivant" data-i18n-attr="aria-label:projects.next">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <p class="projects-note" data-i18n="projects.note">
+            * Les chiffres indiqués décrivent le périmètre opérationnel de nos interventions. Le calendrier et l'état d'avancement détaillé vous sont communiqués sur simple demande.
+          </p>
+        </div>
+
       </div>
     </section>
 
