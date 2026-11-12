@@ -2266,14 +2266,67 @@ strong {
   }
 }
 
-@media (max-width: 480px) {
-  .project-card {
-    flex: 0 0 calc(100vw - 3rem);
+/* Mobile : plus de carrousel, cartes empilées en pleine largeur, tout est lisible */
+@media (max-width: 768px) {
+  .projects-track {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-card,
+  .project-card.is-active,
+  .project-card:hover {
+    flex: none;
+    transform: none;
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 22px -8px rgba(34, 66, 24, 0.18);
+  }
+
+  .project-card:hover .project-card-image img {
+    transform: none;
+  }
+
+  .projects-carousel-nav {
+    display: none;
+  }
+
+  .project-card-image {
+    height: 200px;
   }
 
   .project-banner-title {
+    white-space: normal;
+    font-size: 1.05rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .project-card-body {
+    padding: 1.35rem 1.25rem 1.25rem;
+  }
+
+  .project-meta-pill {
+    padding: 0.3rem 0.8rem;
+  }
+
+  .project-pill-val {
+    font-size: 0.9rem;
+  }
+
+  .project-pill-lbl {
+    font-size: 0.85rem;
+  }
+
+  .project-card-text {
     font-size: 0.98rem;
-    padding: 0.65rem 0.9rem;
+    line-height: 1.7;
+  }
+
+  .projects-note {
+    text-align: left;
   }
 }
 
