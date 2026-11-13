@@ -90,6 +90,7 @@ body {
   background: var(--blanc);
   line-height: 1.7;
   overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -954,7 +955,7 @@ strong {
 /* Profil — tablette & mobile : panneau puis cartes, empilés */
 @media (max-width: 900px) {
   .profil-showcase {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .profil-dark-panel {
@@ -1513,7 +1514,7 @@ strong {
 /* Responsive */
 @media (max-width: 1080px) {
   .cop-showcase {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.75rem;
   }
 
@@ -2238,7 +2239,7 @@ strong {
 /* Responsive Carrousel */
 @media (max-width: 1024px) {
   .projects-header-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
   }
 
@@ -2270,7 +2271,7 @@ strong {
 @media (max-width: 768px) {
   .projects-track {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;
     overflow: visible;
     margin: 0;
@@ -2914,7 +2915,7 @@ strong {
 /* ─── MoU & B2B — responsive ─────────────────────────────── */
 @media (max-width: 1024px) {
   .mou-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .mou-intro {
@@ -2924,7 +2925,7 @@ strong {
 
 @media (max-width: 860px) {
   .b2b-steps {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.75rem;
   }
 
@@ -2953,7 +2954,7 @@ strong {
 
 @media (max-width: 640px) {
   .mou-ticket {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .mou-ticket-main {
@@ -2961,7 +2962,7 @@ strong {
   }
 
   .mou-features {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   /* Souche sous le billet : perforation horizontale, encoches sur les côtés */
@@ -2986,9 +2987,26 @@ strong {
     font-size: 2.6rem;
   }
 
+  .mou-ticket-stub {
+    flex-wrap: wrap;
+    gap: 0.9rem 1rem;
+  }
+
+  /* Le libellé peut passer sur deux lignes (traduction auto du navigateur, petits écrans) */
   .mou-btn {
+    flex: 1 1 170px;
     width: auto;
-    padding: 0.75rem 1.2rem;
+    min-width: 0;
+    padding: 0.75rem 1.1rem;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 380px) {
+  .mou-btn {
+    flex-basis: 100%;
   }
 }
 
@@ -3446,7 +3464,7 @@ strong {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
   }
 
@@ -3549,7 +3567,7 @@ strong {
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 3rem;
   }
 
@@ -3562,7 +3580,7 @@ strong {
   .ci-redesign-grid,
   .contact-grid,
   .projects-header-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
   }
 
